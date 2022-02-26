@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robiul</title>      
+       
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="./assets/jquery.min.js"></script>
+    <script src="./assets/html2canvas.min.js"></script>
+ 
+</head>
+<body>
+    <!-- input section   -->
+    <section class="input-section" id="input-section">
+        <div class="form" style="height: 300px;">
+            <h2 class="title">Enter Your Name</h2>
+            <input oninput="inputHandler()" id="input-text" class="form-controller" type="text">
+          
+            <button id="go" class="goBtn" style="display: none;">Go</button>
+        </div>
+    </section>
+
+    <!-- output section -->    
+    <section class="output-section" id="output-section" style="display: none;">
+       <div class="output-box">
+            <div class="manage-buttons">
+                <button id="edit">Edit</button>
+                <button onclick="takeshot()">Save</button>
+            </div>
+            <div id="output-body">
+                <div class="output-content">
+                    <p id="output-logo">Hello</p>
+                </div>
+            </div>            
+       </div>
+       <a class="gh-link" href="https://github.com/Robiul26">Robiul Robi ©</a>
+    </section>
+
+<!-- Script link -->
+<script src="./assets/script.js"></script>
+</body>
+</html>
